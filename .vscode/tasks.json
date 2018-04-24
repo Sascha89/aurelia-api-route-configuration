@@ -1,0 +1,46 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "docker npm install",
+            "type": "shell",
+            "command": "docker run --rm -v /$(pwd)/:/usr/local/etc/app saschan/aurelia-cli npm install",
+            "windows": {
+                "command": "docker run --rm -v /$(pwd)/:/usr/local/etc/app saschan/aurelia-cli npm install"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "docker gulp build",
+            "type": "shell",
+            "command": "docker run --rm -v /$(pwd)/:/usr/local/etc/app saschan/aurelia-cli gulp build",
+            "windows": {
+                "command": "docker run --rm -v /$(pwd)/:/usr/local/etc/app saschan/aurelia-cli gulp build"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "docker npm run test",
+            "type": "shell",
+            "command": "docker run --rm -v /$(pwd)/:/usr/local/etc/app saschan/aurelia-cli npm run test",
+            "windows": {
+                "command": "docker run --rm -v /$(pwd)/:/usr/local/etc/app saschan/aurelia-cli npm run test"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        }
+    ]
+}
