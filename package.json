@@ -1,12 +1,11 @@
 {
-  "name": "aurelia-api-route-configuration",
+  "name": "aurelia-api-router",
   "version": "1.0.0",
   "description": "",
   "keywords": [
     "aurelia",
     "api",
-    "route",
-    "configuration"
+    "router"
   ],
   "main": "dist/commonjs/index.js",
   "typings": "dist/commonjs/index.d.ts",
@@ -69,13 +68,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vheissu/aurelia-typescript-plugin.git"
+    "url": "git+https://github.com/Sascha89/aurelia-api-router"
   },
-  "author": "Dwayne Charrington <dwaynecharrington@gmail.com>",
+  "author": "Sascha Franke <info@sascha-franke.com>",
   "license": "MIT",
-  "homepage": "https://github.com/Vheissu/aurelia-typescript-plugin#readme",
   "bugs": {
-    "url": "https://github.com/Vheissu/aurelia-typescript-plugin/issues"
+    "url": "https://github.com/Sascha89/aurelia-api-router/issues"
   },
   "jspm": {
     "registry": "npm",
