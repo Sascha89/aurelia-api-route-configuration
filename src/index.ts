@@ -10,7 +10,8 @@ export function configure(aurelia: FrameworkConfiguration, configCallback?: (con
     } else {
         promise = Promise.resolve();
     }
-    return promise;
+    //Waiting for configuration is ready
+    return promise.then(function () { return true; });
 }
 
 export { RouteService };
